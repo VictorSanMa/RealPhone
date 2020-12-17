@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  datasource:
+    url: ${REALPHONE_DATABASE_URL}
+    username: ${REALPHONE_DATABASE_USERNAME}
+    password: ${REALPHONE_DATABASE_PASSWORD}
+
+ssh:
+  ip: ${REALPHONE_SSH_IP}
+  port: ${REALPHONE_SSH_PORT}
+  username: ${REALPHONE_SSH_USERNAME}
+  password: ${REALPHONE_SSH_PASSWORD}
+  send-command: ${REALPHONE_SENDCOMMAND}
+  send-msg-command: ${REALPHONE_SENDMSGCOMMAND}
